@@ -1,0 +1,77 @@
+/* ^Global Style start */
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.7) , rgba(0,0,0,0.7)) ,url(../images/hero-section.jpg);
+    background-position: center;
+    background-size:cover ;
+}
+
+
+img {
+    height: 250px;
+}
+
+*{
+    scroll-padding-top: 78px;
+}
+
+
+.text-section{
+    position: relative;
+    font-family: "Ubuntu", sans-serif;
+    font-style: italic;
+}
+.text-section::after{
+    content: "";
+    position: absolute;
+    width: 150px;
+    height:3px;
+    border-top: 3px solid #dc3545;
+    bottom: -20%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+h1{
+    color: #dc3545;
+    font-family: "Ubuntu", sans-serif;
+    font-style: italic;
+}
+/* ^Global Style End */
+
+
+/* ?NavBar Style Start */
+
+.account{
+    color: #E3D8B7;
+}
+.logo{
+    color: #dc3545;
+    font-family: "Ubuntu", sans-serif;
+    font-style: italic;
+}
+
+.img-logo img{
+    width: 100%;
+
+}
+
+.img-logo{
+    width: 5%;
+    height: 5%;
+}
+/* ?NavBar Style End */
+
+
+/* &PRODUCT SECTION Start*/
+
+.products-Section{
+    background-color: #f1f1f1;
+}
+
+
+
+/* &PRODUCT SECTION END*/
+
+
+
+

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hyper Market</title>
+
+    <!-- &FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet" />
+
+    <link rel="shortcut icon" href="images/market.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar">
+    <!-- & Header section -->
+    <header class="header vh-100 text-white text-center" id="home">
+        <!-- & navbar  Section -->
+        <nav class="navbar navbar-expand-lg navbar-dark py-3 fixed-top bg-black">
+            <div class="container">
+                <a class="navbar-brand text-uppercase h1 logo w-25 " href="#home">
+                    <img src="images/market.png" class="img-logo d-none d-md-inline-block" alt="">
+                    Hyper Market
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-3">
+                        <li class="nav-item">
+                            <a class="nav-link active underline fs-5" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active underline fs-5" aria-current="page" href="#products">Our
+                                Products</a>
+                        </li>
+                        <li class="nav-item" id="accountLogIn">
+                            <a class="nav-link active underline fs-5 account" aria-current="page"
+                                href="HTML/LogIn.html">Log In</a>
+                        </li>
+                        <li class="nav-item" id="accountSignUp">
+                            <a class="nav-link active underline fs-5 account" aria-current="page" href="HTML/Sign UP.html">Sign Up</a>
+                        </li>
+                        <li class="nav-item" id="usernameDisplay">
+                        </li>
+                    </ul>
+                    <button class="btn btn-white text-danger" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+        <!-- & header content Section -->
+        <div class="d-flex justify-content-center align-items-center flex-column vh-100">
+            <h5 class="text-wrap w-75 lh-base display-4 text-white">Welcome to</h5>
+            <h1 class="display-3 type-effect mb-4 fw-bold">Hyper Market</h1>
+            <div>
+                <div class="team-img-caption d-flex justify-content-center align-items-center gap-4">
+                    <div
+                        class="team-icon-background text-white rounded-circle d-flex justify-content-center align-items-center">
+                        <a href="#" class="text-white"><i class="fa-brands fa-facebook-f"></i></a>
+                    </div>
+                    <div
+                        class="team-icon-background text-white rounded-circle d-flex justify-content-center align-items-center">
+                        <a href="#" class="text-white"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- & products section -->
+    <section class="py-5 products-Section" id="products">
+        <div class="container">
+            <div class="text-section">
+                <h2 class="text-center mb-5 bold fs-1">Our Products</h2>
+            </div>
+            <div class="row row-cols-1 row-cols-md-4 g-4">
+                <div class="col col-md-3">
+                    <div class="card text-center">
+                        <img src="images/milk.jpg" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">Milk & cheese</h5>
+                            <a href="#viewedProducts"><button class="btn btn-danger" onclick="viewDairyProducts()">
+                                    View Products
+                                </button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-md-3">
+                    <div class="card text-center">
+                        <img src="images/Fruits, Vegetables.jpg" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">Fruits, Vegetables</h5>
+                            <a href="#viewedProducts"><button class="btn btn-danger"
+                                    onclick="viewFruitsAndVegetablesProducts()">
+                                    View Products
+                                </button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-md-3">
+                    <div class="card text-center">
+                        <img src="images/Meat & Poultry.jpg" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">Meat & Poultry</h5>
+                            <a href="#"><button class="btn btn-danger">View Products</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-md-3">
+                    <div class="card text-center">
+                        <img src="images/Bakery.jpg" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">Bakery</h5>
+                            <a href="#"><button class="btn btn-danger">View Products</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-md-3">
+                    <div class="card text-center">
+                        <img src="images/Beverages.jpg" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">Beverages</h5>
+                            <a href="#"><button class="btn btn-danger">View Products</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-md-3">
+                    <div class="card text-center">
+                        <img src="images/Snacks.jpg" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">Snacks</h5>
+                            <a href="#"><button class="btn btn-danger">View Products</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-md-3">
+                    <div class="card text-center">
+                        <img src="images/Frozen Foods.jpg" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">Frozen Foods</h5>
+                            <a href="#"><button class="btn btn-danger">View Products</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-md-3">
+                    <div class="card text-center">
+                        <img src="images/Household Essentials.jpg" class="card-img-top overflow-hidden" alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">Household Essentials</h5>
+                            <a href="#"><button class="btn btn-danger">View Products</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- &Products section -->
+    <section class="py-5" id="viewedProducts">
+        <div class="container">
+            <div class="d-flex justify-content-center gap-3">
+                <button class="btn btn-danger mb-3" onclick="viewAllProducts()" id="viewAll">
+                    Display all products
+                </button>
+                <button class="d-none btn btn-secondary mb-3" onclick="removeProducts()" id="removeAll">
+                    Clear displayed products
+                </button>
+            </div>
+            <!--^ products will be displayed here -->
+            <div class="row row-cols-1 row-cols-md-4 g-4" id="categoryProducts"></div>
+        </div>
+    </section>
+
+    <!-- ^Cart Section -->
+    <div class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+        id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasScrollingLabel">
+                My Cart
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="card mb-3" style="max-width: 540px">
+                <div class="row g-0" id="viewCart">
+
+                </div>
+            </div>
+            <div id="cartSummary" class="mt-4">
+                <h3 id="totalPrice">Total Price: 0.00</h3>
+            </div>
+            <button class="btn btn-dark" id="checkoutBtn" onclick="checkout()">Go to CHECKOUT</button>
+        </div>
+    </div>
+
+    <!-- & Footer Section -->
+    <footer class="text-center py-2 align-self-center bg-black text-white">
+        <p class="">
+            Copy Right 2024 © By <span class="text-danger">Z3boLa Team</span> All
+            Rights Reserved
+        </p>
+    </footer>
+
+    <!-- ! JS -->
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/account.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

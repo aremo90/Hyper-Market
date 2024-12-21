@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hyper Market</title>
+
+  <!-- &FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet" />
+
+
+    <link rel="shortcut icon" href="../images/market.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/all.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/signUp.CSS">
+</head>
+
+<BODY class="signUp">
+    <!-- &navBar -->
+    <nav class="navbar navbar-expand-lg navbar-dark py-3 fixed-top bg-black">
+        <div class="container">
+            <a class="navbar-brand text-uppercase h1 logo line" href="../index.html">
+                Hyper Market
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-3">
+                    <li class="nav-item">
+                        <a class="nav-link active underline fs-5" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active underline fs-5" aria-current="page" href="../index.html">Our Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active underline fs-5 account" aria-current="page" href="Sign UP.html">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+    <section class="py-5 my-5">
+      <div class="container">
+        <div class="text-section">
+            <h2 class="text-center my-5">Log In</h2>
+        </div>
+
+        <div class="row g-4 fw-bold">
+          <div class="col-md-6 offset-md-3">
+            <label for="logInUsername" class="form-label">Username:</label>
+            <input type="text" class="form-control border-1 border-danger" id="logInUsername" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" placeholder="Username" />
+          </div>
+
+          <div class="col-md-6 offset-md-3">
+            <label for="logInPassword" class="form-label">Password:</label>
+            <input type="password" id="logInPassword" class="form-control border-1 border-danger" aria-describedby="passwordHelpInline"
+                placeholder="Password" />
+          </div>
+
+          <button class="btn btn-danger col-md-2 offset-md-5" onclick="login()">Log In</button>
+          <div id="incorrectMessage" class="text-center">
+
+          </div>
+        </div>
+        
+        <div class="text-center mt-3">
+          <p >Don't have account <a href="Sign UP.html" class="text-danger">Register Now</a></p>
+          <p class=><a href="#">forget password</a></p>
+        </div>
+
+
+      </div>
+    </section>
+
+
+    <script src="../js/bootstrap.bundle.js"></script>
+    <script src="../js/account.js"></script>
+    <script src="../js/main.js"></script>
+</BODY>
